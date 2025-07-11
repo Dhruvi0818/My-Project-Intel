@@ -1,0 +1,111 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="{% static 'css/Emergency.css' %}">
+</head>
+
+<body>
+
+   <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">🩺 Swasthya Kendra</div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Services.html">Services</a></li>
+            <li><a href="Records.html">My Records</a></li>
+             <li><a href="about.html">About us </a></li>
+             <li><a href="Contact.html">Contact Us</a></li>
+            <li><a href="help.html">Help</a></li>
+            <li><a href="Login.html">Login</a></li>
+        </ul>
+    </nav>
+
+  <!-- Title + Alert -->
+  <section class="section">
+    <h1>Emergency Help</h1>
+    <div class="alert">⚠️ If this is a medical emergency, contact help immediately using the options below.</div>
+  </section>
+
+  <!-- Emergency Contact Numbers -->
+  <section class="section">
+    <h2>Emergency Contact Numbers</h2>
+    <div class="contacts">
+      <div class="contact-card">
+        <h4>🚑 Ambulance</h4>
+        <p>108</p>
+      </div>
+      <div class="contact-card">
+        <h4>📞 Health Helpline</h4>
+        <p>104</p>
+      </div>
+      <div class="contact-card">
+        <h4>👮 Police</h4>
+        <p>100</p>
+      </div>
+      <div class="contact-card">
+        <h4>🧠 Mental Health Support</h4>
+        <p>9152987821</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Ambulance Request Form -->
+  <section class="section">
+    <h2>Request an Ambulance</h2>
+    <form>
+      <input type="text" placeholder="Your Full Name" required />
+      <input type="text" placeholder="Current Location / Address" required />
+      <input type="text" placeholder="Type of Emergency (e.g., Accident, Chest Pain)" required />
+      <input type="tel" placeholder="Phone Number" required />
+      <button type="submit">Submit Request</button>
+    </form>
+  </section>
+
+  <!-- Nearby Hospitals -->
+<section class="section">
+  <h2 class="section-title">Nearby Hospitals / Clinics</h2>
+  <div class="hospital-grid">
+    <div class="hospital-card">
+      <h4>🏥 Civil Hospital</h4>
+      <p>Ahmedabad – 3.2 km</p>
+    </div>
+    <div class="hospital-card">
+      <h4>🏥 Apollo Clinic</h4>
+      <p>Satellite – 5.1 km</p>
+    </div>
+    <div class="hospital-card">
+      <h4>🏥 Government CHC Centre</h4>
+      <p>2.8 km</p>
+    </div>
+  </div>
+</section>
+
+<!-- Emergency Safety Tips -->
+<section class="section">
+  <h2 class="section-title">Emergency Safety Tips</h2>
+  <div class="tips-grid">
+    <div class="tip-card">🚨 Stay calm and don’t panic.</div>
+    <div class="tip-card">📑 Keep your medical records and ID ready.</div>
+    <div class="tip-card">☎️ Call emergency number before taking action.</div>
+    <div class="tip-card">🧍‍♂️ Stay with the patient until help arrives.</div>
+    <div class="tip-card">📍 Share exact location when calling ambulance.</div>
+  </div>
+</section>
+
+  <!-- Footer Section -->
+  <footer class="footer">
+    <div class="footer-content">
+      <p>© 2025 Swasthya Kendra. All rights reserved.</p>
+      <p>Need help? Call our helpline: <strong>1800-123-456</strong></p>
+      <p>Designed by Dhruvi Rana</p>
+    </div>
+  </footer>
+
+</body>
+<script src="emergency.js"></script>
+</html>

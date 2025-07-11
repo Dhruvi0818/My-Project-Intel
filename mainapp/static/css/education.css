@@ -1,0 +1,379 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f4f9ff;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #0077b6;
+  color: #fff;
+}
+
+.navbar .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+}
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 2rem;
+}
+
+h1,
+h2 {
+  text-align: center;
+  color: #0077b6;
+}
+
+p.intro {
+  text-align: center;
+  color: #444;
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+}
+
+/* Featured Articles */
+.articles {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card h3 {
+  color: #023e8a;
+}
+
+.card p {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+/* Health Topics */
+.topics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.topic-card {
+  background-color: #e0f7fa;
+  border-radius: 10px;
+  padding: 1.2rem;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.topic-card:hover {
+  background-color: #b2ebf2;
+  cursor: pointer;
+}
+
+.topic-card span {
+  font-size: 2rem;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.topic-card h4 {
+  margin: 0;
+  color: #00796b;
+}
+
+/* Women & Childcare Education */
+.women-childcare {
+  padding: 2rem 1rem;
+  background: #fef9f9;
+  text-align: center;
+}
+
+.women-childcare h2 {
+  color: #d62828;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+.education-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.edu-card {
+  background: #ffffff;
+  border-left: 6px solid #f77f00;
+  padding: 1.2rem 1rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: left;
+}
+
+.edu-card h3 {
+  color: #003049;
+  margin-bottom: 0.5rem;
+}
+
+.edu-card p {
+  color: #555;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+.edu-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
+}
+
+/* Health Topics Grid */
+.health-topics h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: #023e8a;
+  margin-bottom: 2rem;
+}
+
+.topics-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.topic-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.topic-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 24px rgba(0, 119, 182, 0.2);
+}
+
+.topic-card img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 1rem;
+}
+
+.topic-card h4 {
+  color: #0077b6;
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.topic-card p {
+  font-size: 0.9rem;
+  color: #444;
+}
+
+/* === Downloadable Brochures Section === */
+/* Brochure Section */
+.brochure-section {
+  padding: 2rem 1rem;
+  background: #f5faff;
+  text-align: center;
+}
+
+.brochure-section h2 {
+  color: #023e8a;
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+}
+
+/* Grid layout */
+.brochure-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* Card Style */
+.brochure-card {
+  background: #fff;
+  padding: 1.2rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+  text-align: left;
+}
+
+.brochure-card h4 {
+  color: #0077b6;
+  margin-bottom: 0.5rem;
+}
+
+.brochure-card p {
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.brochure-card a {
+  background-color: #0077b6;
+  color: white;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.brochure-card a:hover {
+  background-color: #023e8a;
+}
+
+/* === FAQ Section === */
+.faq-section {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+
+.faq-question {
+  width: 100%;
+  background: #0077b6;
+  color: white;
+  text-align: left;
+  padding: 1rem;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+  transition: background 0.3s;
+}
+
+.faq-question:hover {
+  background: #023e8a;
+}
+
+.faq-answer {
+  display: none;
+  background: #f0f8ff;
+  padding: 1rem;
+  border-left: 4px solid #0077b6;
+  border-radius: 0 0 8px 8px;
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+}
+
+/* === Newsletter Signup Section === */
+/* Newsletter Section */
+.newsletter-section {
+  background-color: #e0f7fa;
+  padding: 2rem 1rem;
+  text-align: center;
+  border-radius: 10px;
+  margin: 3rem auto;
+  max-width: 700px;
+}
+
+.newsletter-container h2 {
+  color: #023e8a;
+  margin-bottom: 0.5rem;
+}
+
+.newsletter-container p {
+  margin-bottom: 1.5rem;
+  color: #333;
+  font-size: 1rem;
+}
+
+#newsletterForm {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+#newsletterForm input[type="email"] {
+  padding: 0.7rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  width: 300px;
+  max-width: 100%;
+}
+
+#newsletterForm button {
+  padding: 0.7rem 1.5rem;
+  background-color: #0077b6;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#newsletterForm button:hover {
+  background-color: #023e8a;
+}
+
+.form-message {
+  margin-top: 1rem;
+  color: green;
+  font-weight: 500;
+}
+
+/* footer */
+.footer {
+  background-color: #0077b6;
+  color: white;
+  padding: 1.5rem 0;
+  text-align: center;
+  font-size: 1rem;
+  margin-top: 2rem;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.footer-content p {
+  margin: 0.3rem 0;
+  font-weight: 400;
+}
+
+.footer-content strong {
+  color: #ffdd57;
+}

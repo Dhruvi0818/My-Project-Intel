@@ -1,0 +1,250 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f5faff;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #0077b6;
+  color: #fff;
+}
+
+.navbar .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+}
+
+/* Page Title Section */
+.page-title {
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.page-title h1 {
+  color: #023e8a;
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.page-title p {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+/* Services Grid */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+  max-width: 1300px;
+  margin: auto;
+}
+
+.service-card {
+  background-color: white;
+  border-radius: 10px;
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s;
+}
+
+.service-card:hover {
+  transform: scale(1.03);
+  background: #e8faff;
+}
+
+.service-card img {
+  width: 140px;
+  height: 140px;
+  margin-bottom: 1rem;
+}
+
+.service-card h3 {
+  margin: 0.5rem 0;
+  color: #0077b6;
+}
+
+.service-card p {
+  font-size: 0.95rem;
+  color: #333;
+}
+
+.service-card a {
+  display: inline-block;
+  margin-top: 1rem;
+  background: #0077b6;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  text-decoration: none;
+}
+
+.service-card a:hover {
+  background: #023e8a;
+}
+
+/* Benefits Section */
+.benefits {
+  background: #e7f9ff;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.benefits h2 {
+  color: #023e8a;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.benefit-box {
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.benefit-box:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 119, 182, 0.2);
+}
+.benefit-box img {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 0.8rem;
+  transition: transform 0.3s ease;
+}
+.benefit-box:hover img {
+  transform: rotate(5deg);
+}
+
+.benefit-box h4 {
+  margin-bottom: 0.5rem;
+  color: #0077b6;
+}
+
+/* Process Section */
+.process {
+  background: #f0fbff;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.process h2 {
+  color: #023e8a;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.process-steps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.step {
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.step span {
+  background-color: #0077b6;
+  color: white;
+  font-size: 1.2rem;
+  padding: 0.5rem 1rem;
+  border-radius: 50%;
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+
+.step h4 {
+  color: #0077b6;
+  margin-bottom: 0.5rem;
+}
+/* Animation Keyframes */
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Animate Each Step */
+.step {
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeUp 0.8s ease forwards;
+}
+
+/* Step-by-Step Delay */
+.step:nth-child(1) {
+  animation-delay: 0.3s;
+}
+.step:nth-child(2) {
+  animation-delay: 0.6s;
+}
+.step:nth-child(3) {
+  animation-delay: 0.9s;
+}
+.step:nth-child(4) {
+  animation-delay: 1.2s;
+}
+
+/* footer */
+.footer {
+  background-color: #0077b6;
+  color: white;
+  padding: 1.5rem 0;
+  text-align: center;
+  font-size: 1rem;
+  margin-top: 2rem;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.footer-content p {
+  margin: 0.3rem 0;
+  font-weight: 400;
+}
+
+.footer-content strong {
+  color: #ffdd57;
+}

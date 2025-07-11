@@ -1,0 +1,84 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/help.css' %}">
+</head>
+
+<body>
+     <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">🩺 Swasthya Kendra</div>
+        <ul>
+            <li><a href="{% url 'index' %}">Home</a></li>
+            <li><a href="{% url 'Services' %}">Services</a></li>
+            <li><a href="{% url 'Records' %}">My Records</a></li>
+             <li><a href="{% url 'about' %}">About us </a></li>
+             <li><a href="{% url 'Contact' %}">Contact Us</a></li>
+            <li><a href="{% url 'help' %}">Help</a></li>
+            <li><a href="{% url 'login' %}">Login</a></li>
+        </ul>
+    </nav>
+
+    <!-- Page Title -->
+    <section class="page-title">
+        <h1>Help & Support</h1>
+        <p>Need help? Read FAQs or contact our support team below.</p>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="faq-box">
+            <h4>How to book a lab test?</h4>
+            <p>Click on "Lab Test Booking", choose your test, date, and submit.</p>
+        </div>
+        <div class="faq-box">
+            <h4>Can I use the kiosk without login?</h4>
+            <p>Yes, some services like Emergency Help are available without login.</p>
+        </div>
+        <div class="faq-box">
+            <h4>How to access my past reports?</h4>
+            <p>Go to "Health Records" and enter your mobile number or user ID.</p>
+        </div>
+        <div class="faq-box">
+            <h4>What if I forgot my password?</h4>
+            <p>Click on "Forgot Password" on login screen to reset your credentials.</p>
+        </div>
+    </section>
+
+    <!-- Contact Support -->
+    <section class="contact-support">
+        <h2>Contact Support</h2>
+        <p>📞 Toll-Free: 1800-123-456</p>
+        <p>📧 Email: support@swasthyakendra.in</p>
+        <p>🕒 Mon to Sat – 9:00 AM to 6:00 PM</p>
+    </section>
+
+    <!-- Feedback Form -->
+    <section class="feedback-form">
+        <h3>Send Us Your Feedback</h3>
+        <form action="#" method="POST">
+            <input type="text" placeholder="Your Name" required />
+            <input type="email" placeholder="Your Email" required />
+            <textarea rows="4" placeholder="Your Message or Issue" required></textarea>
+            <button type="submit">Submit Feedback</button>
+        </form>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>© 2025 Swasthya Kendra. All rights reserved.</p>
+            <p>Need help? Call our helpline: <strong>1800-123-456</strong></p>
+            <p>Designed by Dhruvi Rana</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

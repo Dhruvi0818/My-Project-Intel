@@ -1,0 +1,273 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f0faff;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #0077b6;
+  color: #fff;
+}
+
+.navbar .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+}
+
+/* Virtual Health Consultation Hero */
+.vhc-hero {
+  background: linear-gradient(135deg, #00b4d8, #0077b6);
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
+  border-radius: 0 0 40px 40px;
+}
+.vhc-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+.vhc-content p {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+.vhc-content .btn {
+  padding: 12px 24px;
+  background-color: white;
+  color: #0077b6;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
+.vhc-content .btn:hover {
+  background-color: #caf0f8;
+}
+
+/* Specialization Selector */
+.specialization-section {
+  padding: 40px 20px;
+  text-align: center;
+}
+.specialization-section h2 {
+  color: #023e8a;
+  margin-bottom: 1rem;
+}
+.specialization-section select {
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  width: 280px;
+}
+
+/* Health Concern Form */
+#healthForm {
+  max-width: 700px;
+  margin: 2rem auto;
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+#healthForm input,
+#healthForm select,
+#healthForm textarea {
+  padding: 0.9rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  resize: vertical;
+  transition: border 0.3s;
+}
+
+#healthForm input:focus,
+#healthForm select:focus,
+#healthForm textarea:focus {
+  border-color: #0077b6;
+  outline: none;
+}
+
+#healthForm button {
+  padding: 0.9rem;
+  background-color: #0077b6;
+  color: #fff;
+  border: none;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#healthForm button:hover {
+  background-color: #023e8a;
+}
+
+/*  Doctor Availability Section */
+#availabilitySection {
+  max-width: 900px;
+  margin: 3rem auto;
+  background: #e6f7ff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.06);
+}
+
+#availabilitySection h2 {
+  text-align: center;
+  color: #023e8a;
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+}
+
+/* Availability Grid Layout  */
+#availabilityGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+  padding: 0 1rem;
+}
+
+/*  Individual Slot Card  */
+.slot-card {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  text-align: center;
+  font-size: 1rem;
+  color: #333;
+  cursor: pointer;
+}
+
+.slot-card:hover {
+  background-color: #caf0f8;
+  transform: translateY(-5px);
+  box-shadow: 0 8px 18px rgba(0, 119, 182, 0.15);
+}
+
+.doctor-availability {
+  padding: 2rem;
+  background: #f8f9fa;
+  text-align: center;
+}
+
+.availability-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.slot-card {
+  background: white;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.slot-card:hover {
+  background-color: #d0f0ff;
+}
+
+/* videp call section */
+.video-call-section {
+  padding: 2rem;
+  text-align: center;
+  background: #eefbff;
+}
+
+.video-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+video {
+  width: 300px;
+  height: 200px;
+  background: #000;
+  border-radius: 10px;
+}
+
+/* chat window */
+.chat-section {
+  padding: 2rem;
+  background: #fefefe;
+}
+
+.chat-box {
+  height: 250px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  background: #f7f7f7;
+}
+
+#chatForm {
+  display: flex;
+  gap: 0.5rem;
+}
+
+#chatForm input {
+  flex: 1;
+  padding: 0.7rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+#chatForm button {
+  padding: 0.7rem 1rem;
+  background: #0077b6;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* footer */
+.footer {
+  background-color: #0077b6;
+  color: white;
+  padding: 1.5rem 0;
+  text-align: center;
+  font-size: 1rem;
+  margin-top: 2rem;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.footer-content p {
+  margin: 0.3rem 0;
+  font-weight: 400;
+}
+
+.footer-content strong {
+  color: #ffdd57;
+}

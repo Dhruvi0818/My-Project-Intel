@@ -1,0 +1,186 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="{% static 'css/schemes.css' %}">
+</head>
+
+<body>
+ <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">🩺 Swasthya Kendra</div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Services.html">Services</a></li>
+            <li><a href="Records.html">My Records</a></li>
+             <li><a href="about.html">About us </a></li>
+             <li><a href="Contact.html">Contact Us</a></li>
+            <li><a href="help.html">Help</a></li>
+            <li><a href="Login.html">Login</a></li>
+        </ul>
+    </nav>
+
+  <!-- Page Heading -->
+  <section>
+    <h2>🩺 Government Health Schemes</h2>
+    <p>Explore free and affordable healthcare schemes offered by the Government of India.</p>
+  </section>
+
+  <!-- Schemes Grid -->
+  <section>
+    <div class="schemes-grid">
+      <div class="scheme-card">
+        <h3>Ayushman Bharat Yojana</h3>
+        <p>Provides ₹5 lakh health insurance coverage per family per year.</p>
+      </div>
+      <div class="scheme-card">
+        <h3>Jan Aushadhi Scheme</h3>
+        <p>Offers affordable generic medicines at authorized medical stores.</p>
+      </div>
+      <div class="scheme-card">
+        <h3>Rashtriya Swasthya Bima Yojana</h3>
+        <p>Insurance scheme for BPL families to access quality healthcare.</p>
+      </div>
+      <div class="scheme-card">
+        <h3>PM Suraksha Bima Yojana</h3>
+        <p>Accident insurance at ₹12/year, covers up to ₹2 lakh.</p>
+      </div>
+      <div class="scheme-card">
+        <h3>National Digital Health Mission</h3>
+        <p>Create your Health ID and manage medical records digitally.</p>
+      </div>
+      <div class="scheme-card">
+        <h3>Balika Samriddhi Yojana</h3>
+        <p>Supports health & education for girls from underprivileged families.</p>
+      </div>
+      <div class="scheme-card">
+        <h3>Mission Indradhanush</h3>
+        <p>Universal vaccination for children & pregnant women.</p>
+      </div>
+      <div class="scheme-card">
+        <h3>Janani Suraksha Yojana</h3>
+        <p>Provides cash assistance to pregnant women below the poverty line.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Benefits Section -->
+  <section class="benefits-modern">
+    <h2>💡 Why Choose Government Health Schemes?</h2>
+    <div class="benefits-grid">
+      <div class="benefit-card">
+        <span class="icon">💰</span>
+        <p>Free or low-cost healthcare services</p>
+      </div>
+      <div class="benefit-card">
+        <span class="icon">🏡</span>
+        <p>Specially designed for poor & rural families</p>
+      </div>
+      <div class="benefit-card">
+        <span class="icon">✅</span>
+        <p>Officially verified & backed by Govt. of India</p>
+      </div>
+      <div class="benefit-card">
+        <span class="icon">💊</span>
+        <p>Access to expensive treatments without financial burden</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- How to Apply Section -->
+  <section class="apply-process">
+    <h2>📝 How to Apply?</h2>
+    <div class="step-timeline">
+      <div class="timeline-step">
+        <div class="step-marker">1</div>
+        <div class="step-content">
+          <h4>Visit Kiosk</h4>
+          <p>Go to your nearest Health Kiosk or Government Hospital.</p>
+        </div>
+      </div>
+      <div class="timeline-step">
+        <div class="step-marker">2</div>
+        <div class="step-content">
+          <h4>Carry Documents</h4>
+          <p>Bring Aadhaar card, ID proof, and previous medical reports.</p>
+        </div>
+      </div>
+      <div class="timeline-step">
+        <div class="step-marker">3</div>
+        <div class="step-content">
+          <h4>Fill Form</h4>
+          <p>Fill the scheme application or register via kiosk staff.</p>
+        </div>
+      </div>
+      <div class="timeline-step">
+        <div class="step-marker">4</div>
+        <div class="step-content">
+          <h4>Get Confirmation</h4>
+          <p>You will receive SMS/print confirmation for the scheme.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQs Section -->
+  <section class="faq-section">
+    <h2>📌 Frequently Asked Questions</h2>
+
+    <div class="faq-item">
+      <button class="faq-question">
+        Do I need an Aadhaar Card to apply?
+        <span class="arrow">+</span>
+      </button>
+      <div class="faq-answer">
+        <p>Yes, Aadhaar card is usually required for identity verification.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">
+        Can I apply online?
+        <span class="arrow">+</span>
+      </button>
+      <div class="faq-answer">
+        <p>Some schemes allow online registration, but kiosk support is also available.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">
+        Where can I check my scheme status?
+        <span class="arrow">+</span>
+      </button>
+      <div class="faq-answer">
+        <p>You can visit your nearest kiosk or use the official website.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">
+        Are these schemes free of cost?
+        <span class="arrow">+</span>
+      </button>
+      <div class="faq-answer">
+        <p>Most government schemes are free or heavily subsidized for eligible beneficiaries.</p>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="footer">
+    <div class="footer-content">
+      <p>© 2025 Swasthya Kendra. All rights reserved.</p>
+      <p>Need help? Call our helpline: <strong>1800-123-456</strong></p>
+      <p>Designed by Dhruvi Rana</p>
+    </div>
+  </footer>
+
+</body>
+<script src="schemes.js"></script>
+</html>

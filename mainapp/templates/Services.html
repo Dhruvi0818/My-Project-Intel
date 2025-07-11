@@ -1,0 +1,166 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/Services.css' %}">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">🩺 Swasthya Kendra</div>
+        <ul>
+            <li><a href="{% url 'index' %}">Home</a></li>
+            <li><a href="{% url 'Services' %}">Services</a></li>
+            <li><a href="{% url 'Records' %}">My Records</a></li>
+             <li><a href="{% url 'about' %}">About us </a></li>
+             <li><a href="{% url 'Contact' %}">Contact Us</a></li>
+            <li><a href="{% url 'help' %}">Help</a></li>
+            <li><a href="{% url 'login' %}">Login</a></li>
+        </ul>
+    </nav>
+
+    <!-- Page Title Section -->
+    <section class="page-title">
+        <h1>Available Health Services</h1>
+        <p>Explore all healthcare services offered at our kiosk</p>
+    </section>
+
+    <!-- Services Grid Section -->
+    <section class="services-grid">
+        <div class="service-card">
+            <img src="https://www.ethika.co.in/wp-content/uploads/2022/06/annual-health-checkup.jpg"
+                alt="Health Checkup">
+            <h3>Health Checkup</h3>
+            <p>Basic body checkups including BP, sugar, temperature, and weight.</p>
+            <a href="{% url 'checkup' %}">Use Service</a>
+        </div>
+
+        <div class="service-card">
+            <img src="https://media.istockphoto.com/id/1248555232/vector/woman-is-consulting-with-a-doctor-in-the-office.jpg?s=612x612&w=0&k=20&c=qiI98DyW7V-srB_Jl7beDVRI8SlgzWcEGvy1h1rn2BI="
+                alt="Consult Doctor">
+            <h3>Consult a Doctor</h3>
+            <p>Talk to certified doctors and get prescriptions for your health issues.</p>
+            <a href="{% url 'consult' %}">Use Service</a>
+        </div>
+
+        <div class="service-card">
+            <img src="https://media.istockphoto.com/id/1210719507/vector/testing-note-book.jpg?s=612x612&w=0&k=20&c=MikPIX3TANXBO_jHWz_Ts6mqMnMsvs6sEFayB7Pa98U="
+                alt="Lab Test">
+            <h3>Lab Test Booking</h3>
+            <p>Book lab tests for blood, urine, X-ray, and more with reports online.</p>
+            <a href="{% url 'labtest' %}">Use Service</a>
+        </div>
+
+        <div class="service-card">
+            <img src="https://static.vecteezy.com/system/resources/previews/021/459/233/non_2x/buying-medicines-online-concept-mobile-service-or-app-for-purchasing-medicine-in-online-pharmacy-drugstore-outline-design-style-minimal-illustration-for-landing-page-web-banner-hero-images-vector.jpg"
+                alt="Order Medicine">
+            <h3>Order Medicines</h3>
+            <p>Upload prescription and order medicines for home delivery or pickup.</p>
+            <a href="{% url 'medicine' %}">Use Service</a>
+        </div>
+
+        <div class="service-card">
+            <img src="https://static.vecteezy.com/system/resources/previews/009/902/425/non_2x/medical-records-icon-illustration-vector.jpg"
+                alt="Health Records">
+            <h3>Health Records</h3>
+            <p>View and download your health reports and previous consultations.</p>
+            <a href="{% url 'Records' %}">Use Service</a>
+        </div>
+
+        <div class="service-card">
+            <img src="https://media.istockphoto.com/id/1131997007/vector/medical-insurance-icon-vector-illustration.jpg?s=612x612&w=0&k=20&c=5abpGm7z6XIAVjoXcjm_YR1yAdhEvU4a7YXAahpo358="
+                alt="Schemes">
+            <h3>Govt Health Schemes</h3>
+            <p>Check eligibility and apply for schemes like Ayushman Bharat.</p>
+            <a href="{% url 'schemes' %}">Explore</a>
+        </div>
+
+        <div class="service-card">
+            <img src="https://media.istockphoto.com/id/1408872603/vector/emergency-call-medicine-and-healthcare-icon-medical-support-sign-vector-illustration.jpg?s=612x612&w=0&k=20&c=X9NQj23NRcYkH5qZ5X6giqbqtFfal5uz2uaoVX4Czgw="
+                alt="Emergency">
+            <h3>Emergency Help</h3>
+            <p>Get immediate assistance and helpline support in medical emergencies.</p>
+            <a href="{% url 'Emergency' %}">Get Help</a>
+        </div>
+
+        <div class="service-card">
+            <img src="https://t4.ftcdn.net/jpg/03/35/87/01/360_F_335870116_0ODNCQ3eRXwiIXCEFDQ6mKrKWCid8uay.jpg"
+                alt="Health Education">
+            <h3>Health Tips</h3>
+            <p>Learn daily health tips and lifestyle advice for better living.</p>
+            <a href="{% url 'education' %}">Read Tips</a>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="benefits">
+        <h2>Why Use Our Healthcare Kiosk?</h2>
+        <div class="benefits-grid">
+            <div class="benefit-box">
+                <img src="https://clipart-library.com/new_gallery/943966_mouse-clicker-png.jpg" alt="Easy Access" />
+                <h4>Easy Access</h4>
+                <p>Access essential healthcare from remote villages and towns.</p>
+            </div>
+            <div class="benefit-box">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2xEQbnlSD4_Lr5cEGIeiogbz5dYuhrCYC_w&s"
+                    alt="Affordable" />
+                <h4>Affordable Services</h4>
+                <p>Most services are free or low-cost under government schemes.</p>
+            </div>
+            <div class="benefit-box">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8BGxM15zagx_lNimbF9Kt88wmJxyfg9CUMS2hP8Jjk-TBnYaPgAQCii2F_IpgtdjFApQ&usqp=CAU" alt="Multi-language" />
+                <h4>Multiple Languages</h4>
+                <p>Available in regional languages for better understanding.</p>
+            </div>
+            <div class="benefit-box">
+                <img src="https://img.freepik.com/premium-vector/24-hour-service-iconheadphone-talk-support-phone-consult-customer-problems_68708-3348.jpg"
+                    alt="Support" />
+                <h4>24x7 Help</h4>
+                <p>Support and emergency help available anytime you need.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="process">
+        <h2>How Our Services Work</h2>
+        <div class="process-steps">
+            <div class="step">
+                <span>1</span>
+                <h4>Login or Register</h4>
+                <p>Start by logging in to your kiosk profile or sign up easily.</p>
+            </div>
+            <div class="step">
+                <span>2</span>
+                <h4>Select a Service</h4>
+                <p>Choose any service you need — like checkup or consultation.</p>
+            </div>
+            <div class="step">
+                <span>3</span>
+                <h4>Fill Your Details</h4>
+                <p>Provide required info, upload reports, or describe your issue.</p>
+            </div>
+            <div class="step">
+                <span>4</span>
+                <h4>Get Confirmation</h4>
+                <p>Receive result, report, or doctor advice within minutes!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>© 2025 Swasthya Kendra. All rights reserved.</p>
+            <p>Need help? Call our helpline: <strong>1800-123-456</strong></p>
+            <p>Designed by Dhruvi Rana</p>
+        </div>
+    </footer>
+</body>
+<script src="services.js"></script>
+</html>

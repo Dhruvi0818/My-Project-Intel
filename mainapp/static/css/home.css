@@ -1,0 +1,332 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f5faff;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #0077b6;
+  color: #fff;
+}
+
+.navbar .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+}
+
+/* Welcome Section */
+.welcome {
+  text-align: center;
+  padding: 2rem;
+}
+
+.welcome h2 {
+  color: #023e8a;
+  font-size: 2rem;
+}
+
+.welcome p {
+  color: #555;
+  margin-top: 0.5rem;
+}
+
+/* Health Dashboard */
+.dashboard-section {
+  padding: 40px;
+  background-color: #f0f9ff;
+  text-align: center;
+}
+
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.dashboard-card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Health Tips */
+section h2 {
+  text-align: center;
+  color: #023e8a;
+  margin: 2rem 0 1rem;
+  font-size: 2rem;
+}
+
+.health-tips {
+  background: #e9faff;
+  padding: 2rem 1rem;
+}
+
+.tips-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 4rem;
+}
+
+.tip-box {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
+  font-weight: 500;
+  width: 250px;
+  height: 80px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.tip-box:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+  background-color: #ffffff;
+}
+
+.tip-box:hover {
+  color: #0077b6;
+}
+/*  Success Stories Section Testimonials */
+.testimonials {
+  background: #fff7f0;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.testimonial-zigzag {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 1000px;
+  margin: 40px auto;
+  gap: 40px;
+  flex-direction: row;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+.testimonial-zigzag:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.testimonial-zigzag.reverse {
+  flex-direction: row-reverse;
+}
+
+.zigzag-img img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.testimonial-zigzag:hover .zigzag-img img {
+  transform: scale(1.05);
+}
+
+.zigzag-text {
+  flex: 1;
+  text-align: left;
+}
+
+.zigzag-text p {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  color: #333;
+  line-height: 1.6;
+}
+
+.zigzag-text h4 {
+  color: #ff5e2d;
+  font-weight: 600;
+}
+
+/* Mobile-friendly */
+@media (max-width: 768px) {
+
+  .testimonial-zigzag,
+  .testimonial-zigzag.reverse {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .zigzag-text {
+    text-align: center;
+  }
+}
+
+/*Featured Doctors Section  */
+.doctors {
+  background: #f0fff4;
+  padding: 40px;
+  text-align: center;
+}
+
+.doctor-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.doctor-card {
+  background: white;
+  padding: 20px;
+  width: 290px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.doctor-card:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.doctor-card img {
+  width: 80%;
+  border-radius: 40%;
+  height: 150px;
+  object-fit: cover;
+}
+
+/* Blog Section */
+.blog {
+  background: #f5faff;
+  padding: 40px;
+  text-align: center;
+  border-top: 1px solid #ddd;
+}
+
+
+.blog-grid {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.blog-card {
+  background: white;
+  padding: 20px;
+  width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.blog-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.blog-card img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.blog-card a {
+  display: inline-block;
+  margin-top: 10px;
+  color: #0077cc;
+  font-weight: bold;
+}
+
+/* News Section */
+.health-news {
+  background: #f8faff;
+  padding: 2rem 1rem;
+}
+
+.news-list {
+  max-width: 700px;
+  margin: 0 auto;
+  padding-left: 1.1rem;
+  font-size: 1.4rem;
+  line-height: 1.8;
+  color: #333;
+}
+
+/* FAQ Section */
+.faq {
+  background: #ffffff;
+  padding: 2rem 1rem;
+}
+
+.faq-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.faq-box {
+  background-color: #f1f9ff;
+  padding: 1rem;
+  border-left: 5px solid #0077b6;
+  border-radius: 8px;
+}
+
+.faq-box h4 {
+  margin: 0 0 0.5rem;
+  color: #023e8a;
+}
+
+.faq-box p {
+  margin: 0;
+  color: #444;
+}
+
+/* footer */
+.footer {
+  background-color: #0077b6;
+  color: white;
+  padding: 1.5rem 0;
+  text-align: center;
+  font-size: 1rem;
+  margin-top: 2rem;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.footer-content p {
+  margin: 0.3rem 0;
+  font-weight: 400;
+}
+
+.footer-content strong {
+  color: #ffdd57;
+}

@@ -1,0 +1,190 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swasthya Kendrament</title>
+    <link rel="icon" type="image/png" href="{% static 'icons/heading.png' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">🩺 Swasthya Kendra</div>
+        <ul>
+            <li><a href="{% url 'index' %}">Home</a></li>
+            <li><a href="{% url 'Services' %}">Services</a></li>
+            <li><a href="{% url 'Records' %}">My Records</a></li>
+             <li><a href="{% url 'about' %}">About us </a></li>
+             <li><a href="{% url 'Contact' %}">Contact Us</a></li>
+            <li><a href="{% url 'help' %}">Help</a></li>
+            <li><a href="{% url 'login' %}">Login</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Welcome to the Digital Health Kiosk</h1>
+        <p>Access essential healthcare services like doctor consultations, health checkups, lab tests, and more – all in
+            one place.</p>
+        <a href="{% url 'home' %}"><button>Get Started</button></a>
+    </section>
+
+    <!-- Middle Section -->
+    <section class="services">
+        <h2 style="text-align:center; color:#023e8a;">Our Services</h2>
+        <div class="services-container">
+            <div class="service-box">
+                <img src="https://static.vecteezy.com/system/resources/previews/020/487/373/non_2x/clipboard-with-stethoscope-medical-check-form-report-health-checkup-concept-metaphor-illustration-flat-design-eps10-simple-and-modern-style-vector.jpg"
+                    alt="Checkup" />
+                <p>Find a Doctor</p>
+            </div>
+            <div class="service-box">
+                <img src="https://img.freepik.com/premium-vector/woman-patient-consulting-with-doctor-hospital-vector-illustration-doctor-consultation-concept_36358-174.jpg"
+                    alt="Doctor" />
+                <p>Consult a Doctor</p>
+            </div>
+            <div class="service-box">
+                <img src="https://media.istockphoto.com/id/1199619120/vector/blood-test-tube-container-and-medical-lab-analysis-form-list-with-results-and-approved-check.jpg?s=612x612&w=0&k=20&c=N8iMEsLgE0rJxs96V-Ogmqvq2fxhShKPQQNlcWStB-s="
+                    alt="Lab Test" />
+                <p>Lab Tests</p>
+            </div>
+            <div class="service-box">
+                <img src="https://assets.thehansindia.com/h-upload/2023/10/27/1392844-image.webp" alt="Medicine" />
+                <p>Order Medicines</p>
+            </div>
+            <div class="service-box">
+                <img src="https://media.istockphoto.com/id/1165333893/vector/medical-document.jpg?s=612x612&w=0&k=20&c=EGfYzaUUvwH3vKgk6EUDN6AvFfSQRiHv7oVrlCxpE48="
+                    alt="Records" />
+                <p>Health Records</p>
+            </div>
+            <div class="service-box">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQT0l4129QRXwdZ0kRdTKwlfd_T_WXDDh5msQ&s" alt="Schemes" />
+                <p>Govt Schemes</p>
+            </div>
+            <div class="service-box">
+                <img src="https://static.vecteezy.com/system/resources/thumbnails/016/919/867/small_2x/emergency-red-siren-or-rescue-design-free-vector.jpg"
+                    alt="Emergency" />
+                <p>Emergency</p>
+            </div>
+            <div class="service-box">
+                <img src="https://thumbs.dreamstime.com/b/health-tips-button-health-tips-web-button-icon-vector-illustration-isolated-white-background-119480053.jpg"
+                    alt="Education" />
+                <p>Health Tips</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="why-choose-us">
+        <h2>Why Choose Our Kiosk?</h2>
+        <div class="benefits-container">
+            <div class="benefit-box">
+                <img src="https://media.istockphoto.com/id/1477983997/vector/medical-insurance-checkup-health-plan-policy-pixel-perfect-editable-stroke-line-icon.jpg?s=612x612&w=0&k=20&c=sm0A_4nNzYFjHqfqQPn5BCBznZgiRwI1pYJ8sWWUpG0="
+                    alt="Secure">
+                <p>Secure & Private Health Data</p>
+            </div>
+            <div class="benefit-box">
+                <img src="https://cdn-icons-png.flaticon.com/512/5579/5579773.png" alt="All-in-One">
+                <p>All Services in One Place</p>
+            </div>
+            <div class="benefit-box">
+                <img src="https://cdn.prod.website-files.com/63da3362f67ed649a19489ea/65b0b1eb9ad56c822b407e71_659dc91491bb596da71fc768_How%2520to%2520Make%2520Videos%2520in%2520Multiple%2520Languages_languages.png" alt="Language">
+                <p>Multiple Language Support</p>
+            </div>
+            <div class="benefit-box">
+                <img src="https://img.freepik.com/premium-vector/easy-use-circle-icon-snap-fingers-vector-illustration-ready-use-label-simple-emblem_1231005-540.jpg" alt="Easy">
+                <p>Easy to Use for Everyone</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="how-it-works">
+        <h2>How It Works</h2>
+        <div class="steps-container">
+            <div class="step-box">
+                <span>1</span>
+                <p>Select Language & Login</p>
+            </div>
+            <div class="step-box">
+                <span>2</span>
+                <p>Choose the Desired Service</p>
+            </div>
+            <div class="step-box">
+                <span>3</span>
+                <p>Fill Details / Upload Info</p>
+            </div>
+            <div class="step-box">
+                <span>4</span>
+                <p>Get Report / Booked Service</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section style="max-width: 1100px; margin: auto; padding: 50px 20px; text-align: center;">
+    <h2 style="font-size: 36px; margin-bottom: 30px; color: black;">What Our Users Say</h2>
+    
+    <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px;">
+        
+        <div style="background: #fff; padding: 20px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="User 1" style="width: 80px; height: 80px; border-radius: 50%; object-fit: cover; margin-bottom: 10px;">
+            <h3 style="font-size: 20px; margin: 10px 0;">John Doe</h3>
+            <p style="font-size: 16px; color: #333;">"This kiosk helped me consult a doctor in my village. Very helpful."</p>
+        </div>
+
+        <div style="background: #fff; padding: 20px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="User 2" style="width: 80px; height: 80px; border-radius: 50%; object-fit: cover; margin-bottom: 10px;">
+            <h3 style="font-size: 20px; margin: 10px 0;">Sarah Smith</h3>
+            <p style="font-size: 16px; color: #333;">"Easy to use for my parents. Got medicines and checkup instantly!"</p>
+        </div>
+
+        <div style="background: #fff; padding: 20px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+            <img src="https://randomuser.me/api/portraits/men/50.jpg" alt="User 3" style="width: 80px; height: 80px; border-radius: 50%; object-fit: cover; margin-bottom: 10px;">
+            <h3 style="font-size: 20px; margin: 10px 0;">Michael Brown</h3>
+            <p style="font-size: 16px; color: #333;">"Easy to use for my parents. Got medicines and checkup instantly!"</p>
+        </div>
+
+    </div>
+</section>
+
+    <!-- conte section -->
+    <section class="contact-section">
+        <h2>Contact Us</h2>
+        <p class="contact-sub">Have a question or feedback? We’d love to hear from you!</p>
+
+        <div class="contact-container">
+            <div class="contact-info">
+                <p>📍 <strong>Location:</strong> Swasthya Kendra, Rural Health Center</p>
+                <p>📞 <strong>Phone:</strong> 1800-123-456</p>
+                <p>📧 <strong>Email:</strong> support@swasthyakendra.in</p>
+            </div>
+
+            <form class="contact-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea rows="6" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>© 2025 Swasthya Kendra. All rights reserved.</p>
+            <p>Need help? Call our helpline: <strong>1800-123-456</strong></p>
+            <p>Designed by Dhruvi Rana</p>
+        </div>
+    </footer>
+
+</body>
+<script src="{% static 'js/index.js' %}"></script>
+</html>

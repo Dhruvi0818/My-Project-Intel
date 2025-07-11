@@ -1,0 +1,135 @@
+ body {
+   font-family: 'Segoe UI', sans-serif;
+   background-color: #f0faff;
+   margin: 0;
+   padding: 0;
+ }
+
+ /* Navbar */
+ .navbar {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 1rem 2rem;
+   background-color: #0077b6;
+   color: #fff;
+ }
+
+ .navbar .logo {
+   font-size: 1.5rem;
+   font-weight: bold;
+ }
+
+ .navbar ul {
+   list-style: none;
+   display: flex;
+   gap: 1.5rem;
+ }
+
+ .navbar ul li a {
+   text-decoration: none;
+   color: white;
+   font-weight: 500;
+ }
+
+ .container {
+   max-width: 800px;
+   margin: auto;
+   padding: 2rem;
+ }
+
+ h1,
+ h2 {
+   text-align: center;
+   color: #0077b6;
+ }
+
+ p {
+   text-align: center;
+   color: #444;
+ }
+
+ form {
+   background-color: #ffffff;
+   padding: 2rem;
+   border-radius: 10px;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+   margin-top: 2rem;
+ }
+
+ label {
+   display: block;
+   margin-top: 1rem;
+   margin-bottom: 0.3rem;
+   font-weight: 600;
+   color: #333;
+ }
+
+ input,
+ select {
+   width: 100%;
+   padding: 0.8rem;
+   margin-bottom: 1rem;
+   border: 1px solid #ccc;
+   border-radius: 6px;
+ }
+
+ button {
+   background-color: #0077b6;
+   color: white;
+   padding: 1rem;
+   border: none;
+   width: 100%;
+   border-radius: 8px;
+   font-size: 1rem;
+   cursor: pointer;
+ }
+
+ button:hover {
+   background-color: #023e8a;
+ }
+
+ .confirmation {
+   background-color: #d1f7d6;
+   border-left: 5px solid #28a745;
+   padding: 1rem;
+   margin-top: 2rem;
+   border-radius: 6px;
+   color: #155724;
+   font-size: 1rem;
+ }
+
+ .print-btn {
+   margin-top: 1rem;
+   padding: 0.8rem 1.5rem;
+   background-color: #28a745;
+   color: white;
+   border: none;
+   border-radius: 6px;
+   font-size: 1rem;
+   cursor: pointer;
+ }
+
+ .print-btn:hover {
+   background-color: #218838;
+ }
+
+ /* footer */
+ .footer {
+   background-color: #0077b6;
+   color: white;
+   padding: 1.5rem 0;
+   text-align: center;
+   font-size: 1rem;
+   margin-top: 2rem;
+   box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+ }
+
+ .footer-content p {
+   margin: 0.3rem 0;
+   font-weight: 400;
+ }
+
+ .footer-content strong {
+   color: #ffdd57;
+ }

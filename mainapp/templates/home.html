@@ -1,0 +1,203 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="{% static 'css/home.css' %}">
+
+</head>
+
+<body>
+
+   <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">🩺 Swasthya Kendra</div>
+        <ul>
+            <li><a href="{% url 'index' %}">Home</a></li>
+            <li><a href="{% url 'Services' %}">Services</a></li>
+            <li><a href="{% url 'Records' %}">My Records</a></li>
+             <li><a href="{% url 'about' %}">About us </a></li>
+             <li><a href="{% url 'Contact' %}">Contact Us</a></li>
+            <li><a href="{% url 'help' %}">Help</a></li>
+            <li><a href="{% url 'login' %}">Login</a></li>
+        </ul>
+    </nav>
+
+  <!-- welcome section -->
+  <section class="welcome">
+    <h2>Welcome to Your Health Dashboard</h2>
+    <p>Select a service to continue</p>
+  </section>
+
+  <!-- Health Dashboard Section -->
+  <section class="dashboard-section">
+    <h2>My Health Dashboard</h2>
+    <div class="dashboard-grid">
+      <div class="dashboard-card">
+        <h3>BMI & Weight</h3>
+        <p>22.4 (Normal)</p>
+      </div>
+      <div class="dashboard-card">
+        <h3>Last Checkup</h3>
+        <p>12 June 2025</p>
+      </div>
+      <div class="dashboard-card">
+        <h3>Water Intake</h3>
+        <p>5/8 Glasses Today</p>
+      </div>
+      <div class="dashboard-card">
+        <h3>Next Appointment</h3>
+        <p>3 July 2025 - Dr. Riya</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Health Tips Section -->
+  <section class="health-tips">
+    <h2>Stay Healthy Tips</h2>
+    <div class="tips-container">
+      <div class="tip-box">💧 Drink 3–4 liters of water daily</div>
+      <div class="tip-box">🚶‍♀️ Walk 30 mins a day to boost immunity</div>
+      <div class="tip-box">🥗 Eat fresh fruits and vegetables</div>
+      <div class="tip-box">🧘‍♂️ Practice yoga or meditation daily</div>
+    </div>
+  </section>
+
+  <!-- Success Stories Section -->
+  <section class="testimonials">
+  <h2>Success Stories</h2>
+
+  <div class="testimonial-zigzag">
+    <div class="zigzag-img">
+      <img src="{% static 'icons/doct1.jpg' %}" alt="Meena Shah">
+    </div>
+    <div class="zigzag-text">
+      <p>"This kiosk helped me monitor my blood sugar regularly. Very easy to use!"</p>
+      <h4><span>-</span> Meena Shah, 47</h4>
+    </div>
+  </div>
+
+  <div class="testimonial-zigzag reverse">
+    <div class="zigzag-img">
+      <img src="{% static 'icons/doct2.jpg' %}" alt="Rajesh Kumar">
+    </div>
+    <div class="zigzag-text">
+      <p>"I got my BP readings instantly and shared with my doctor. Lifesaver!"</p>
+      <h4><span>-</span> Rajesh Kumar, 52</h4>
+    </div>
+  </div>
+
+  <div class="testimonial-zigzag">
+    <div class="zigzag-img">
+      <img src="{% static 'icons/doct3.jpg' %}" alt="Neha Desai">
+    </div>
+    <div class="zigzag-text">
+      <p>"Thanks to this kiosk, I was able to track my BMI and health tips regularly. Very helpful!"</p>
+      <h4><span>-</span> Neha Desai, 35</h4>
+    </div>
+  </div>
+</section>
+
+  <!-- Featured Doctors Section -->
+  <section class="doctors">
+    <h2>Meet Our Health Experts</h2>
+    <div class="doctor-grid">
+      <div class="doctor-card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjWpx29Qyr1gY-iKFb5ueGfMroqo2Hxvep5Q&s" alt="Dr. Riya Sharma">
+        <h3>Dr. Riya Sharma</h3>
+        <p>Nutritionist – 10 yrs exp</p>
+      </div>
+      <div class="doctor-card">
+        <img src="https://t4.ftcdn.net/jpg/02/69/98/99/360_F_269989951_9Gf7PWaRtrpm2EochO3D5WVn22sFZbNZ.jpg" alt="Dr. Riya Sharma">
+        <h3>Dr. Dipesh Verma</h3>
+        <p>Nutritionist – 10 yrs exp</p>
+      </div>
+      <div class="doctor-card">
+        <img src="https://t4.ftcdn.net/jpg/06/47/16/29/360_F_647162966_SFu8GP6awkeW0OnFnAxPjiGXSoeme4ht.jpg" alt="Dr. Riya Sharma">
+        <h3>Dr. Siya Bariya</h3>
+        <p>Nutritionist – 10 yrs exp</p>
+      </div>
+      <div class="doctor-card">
+        <img src="https://t4.ftcdn.net/jpg/01/36/18/77/360_F_136187711_qeBMOwkPdTg1dCN8e5TR1AmduXDz60Xn.jpg" alt="Dr. Amit Patel">
+        <h3>Dr. Amit Patel</h3>
+        <p>Cardiologist – 12 yrs exp</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Health Blog Section -->
+<section class="blog">
+  <h2>Latest Health Articles</h2>
+  <div class="blog-grid">
+    <div class="blog-card">
+      <img src="https://i0.wp.com/sweetlife.org.za/wp-content/uploads/2024/07/5-symptoms-V2.png?ssl=1" alt="Blog 1">
+      <h4>5 Signs of Diabetes</h4>
+      <p>Learn how to detect early signs and manage your sugar levels effectively.</p>
+      <a href="#">Read More</a>
+    </div>
+    <div class="blog-card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTL8_67luU2fXFNxQQEdD119E-QBabDpP9P-w&s" alt="Blog 2">
+      <h4>Healthy Foods for Monsoon</h4>
+      <p>Boost your immunity this season with these superfoods.</p>
+      <a href="#">Read More</a>
+    </div>
+    <div class="blog-card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxwRGSDOJ8FyWGNZHlEXkVrm4LyzwqSCc8fg&s" alt="Blog 3">
+      <h4>Mental Health Matters</h4>
+      <p>Understanding the importance of self-care and mental wellness in daily life.</p>
+      <a href="#">Read More</a>
+    </div>
+    <div class="blog-card">
+      <img src="https://img.freepik.com/free-vector/medical-checkup-concept-illustration_114360-17857.jpg?semt=ais_hybrid&w=740" alt="Blog 4">
+      <h4>Importance of Regular Checkups</h4>
+      <p>How early detection can prevent major health issues in the long run.</p>
+      <a href="#">Read More</a>
+    </div>
+  </div>
+</section>
+
+  <!-- Health News Section -->
+  <section class="health-news">
+    <h2>Latest Health News & Updates</h2>
+    <ul class="news-list">
+      <li>🗓️ Free Eye Checkup Camp on 25th June</li>
+      <li>💉 Govt launches new vaccination drive for adults</li>
+      <li>📢 New kiosk machine installed at District Hospital</li>
+      <li>🏥 Ayushman Bharat cardholders now get extra lab discount</li>
+    </ul>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="faq">
+    <h2>Need Help?</h2>
+    <div class="faq-container">
+      <div class="faq-box">
+        <h4>How do I consult a doctor?</h4>
+        <p>Click on "Consult a Doctor" and fill in your symptoms and details.</p>
+      </div>
+      <div class="faq-box">
+        <h4>Can I use this without login?</h4>
+        <p>Some services like emergency help can be used without logging in.</p>
+      </div>
+      <div class="faq-box">
+        <h4>How do I get my reports?</h4>
+        <p>Click on "Health Records" and enter your reference number.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="footer">
+    <div class="footer-content">
+      <p>© 2025 Swasthya Kendra. All rights reserved.</p>
+      <p>Need help? Call our helpline: <strong>1800-123-456</strong></p>
+      <p>Designed by Dhruvi Rana</p>
+    </div>
+  </footer>
+</body>
+
+</html>

@@ -1,0 +1,84 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/contact.css' %}">
+</head>
+<body>
+     <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">🩺 Swasthya Kendra</div>
+        <ul>
+            <li><a href="{% url 'index' %}">Home</a></li>
+            <li><a href="{% url 'Services' %}">Services</a></li>
+            <li><a href="{% url 'Records' %}">My Records</a></li>
+             <li><a href="{% url 'about' %}">About us </a></li>
+             <li><a href="{% url 'Contact' %}">Contact Us</a></li>
+            <li><a href="{% url 'help' %}">Help</a></li>
+            <li><a href="{% url 'login' %}">Login</a></li>
+        </ul>
+    </nav>
+
+ <!--Section 1: Hero Banner -->
+  <section class="contact-hero">
+    <h1>Contact Us</h1>
+    <p>We’re here to help you with your health questions and service support.</p>
+  </section>
+
+  <!-- Section 2: Contact Information -->
+  <section class="contact-info">
+    <div class="info-box">
+      <h3>Email Us</h3>
+      <p>info@healthkiosk.com</p>
+    </div>
+    <div class="info-box">
+      <h3>Call Us</h3>
+      <p>+91 98765 43210</p>
+    </div>
+    <div class="info-box">
+      <h3>Working Hours</h3>
+      <p>Mon – Fri: 9:00 AM – 6:00 PM</p>
+    </div>
+  </section>
+
+  <!-- Contact Section - Two Column Layout -->
+<section class="contact-two-column">
+  <div class="contact-left">
+    <h2>Send Us a Message</h2>
+    <form class="contact-form" action="#" method="post">
+      <input type="text" name="name" placeholder="Your Full Name" required />
+      <input type="email" name="email" placeholder="Your Email Address" required />
+      <input type="text" name="subject" placeholder="Subject" required />
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+  <div class="contact-right">
+    <h3>Our Location</h3>
+    <iframe
+      src="https://www.google.com/maps/embed?..."
+      width="100%"
+      height="100%"
+      style="border:0;"
+      allowfullscreen=""
+      loading="lazy"
+    ></iframe>
+  </div>
+</section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>© 2025 Swasthya Kendra. All rights reserved.</p>
+            <p>Need help? Call our helpline: <strong>1800-123-456</strong></p>
+            <p>Designed by Dhruvi Rana</p>
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,160 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #0077b6;
+  color: #fff;
+}
+
+.navbar .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+}
+
+/*  Section 1: Hero Banner  */
+.contact-hero {
+  background: linear-gradient(135deg, #0077b6, #00b4d8);
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.contact-hero h1 {
+  font-size: 2.5rem;
+}
+
+.contact-hero p {
+  font-size: 1.1rem;
+}
+
+/*  Section 2: Contact Info  */
+.contact-info {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 40px 20px;
+  background: #f0f8ff;
+  gap: 30px;
+}
+
+.info-box {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  width: 220px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.info-box:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0, 119, 182, 0.2);
+  background-color: #e6f7ff;
+}
+
+.info-box h3 {
+  color: #023e8a;
+  margin-bottom: 10px;
+}
+
+/* Two Column Layout for Contact Section */
+.contact-two-column {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 50px 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.contact-left,
+.contact-right {
+  flex: 1 1 500px;
+  min-width: 300px;
+}
+
+.contact-left h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.contact-form button {
+  background-color: #0077b6;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.contact-form button:hover {
+  background-color: #023e8a;
+}
+
+.contact-right h3 {
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.contact-right iframe {
+  width: 100%;
+  height: 350px;
+  border-radius: 10px;
+}
+
+/* footer */
+.footer {
+  background-color: #0077b6;
+  color: white;
+  padding: 1.5rem 0;
+  text-align: center;
+  font-size: 1rem;
+  margin-top: 2rem;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.footer-content p {
+  margin: 0.3rem 0;
+  font-weight: 400;
+}
+
+.footer-content strong {
+  color: #ffdd57;
+}

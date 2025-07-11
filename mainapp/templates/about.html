@@ -1,0 +1,153 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/about.css' %}">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">🩺 Swasthya Kendra</div>
+        <ul>
+            <li><a href="{% url 'index' %}">Home</a></li>
+            <li><a href="{% url 'Services' %}">Services</a></li>
+            <li><a href="{% url 'Records' %}">My Records</a></li>
+             <li><a href="{% url 'about' %}">About us </a></li>
+             <li><a href="{% url 'Contact' %}">Contact Us</a></li>
+            <li><a href="{% url 'help' %}">Help</a></li>
+            <li><a href="{% url 'login' %}">Login</a></li>
+        </ul>
+    </nav>
+    <!--hero section  -->
+    <header class="hero-banner">
+        <h1>Empowering Health, One Kiosk at a Time</h1>
+        <p>Welcome to our smart healthcare kiosk platform — designed to make essential health services accessible to
+            everyone.</p>
+        <p>From blood pressure checks to doctor consultations, we bring healthcare to your fingertips.</p>
+        <p>Whether you're in a city or a village, our mission is to ensure everyone can monitor and manage their health
+            with ease.</p>
+    </header>
+
+<!-- Mission, Vision, Values Section -->
+<section class="mvv-section">
+  <div class="mvv-container">
+    <div class="mvv-card mission">
+      <div class="mvv-icon">
+        <img src="https://cdn-icons-png.freepik.com/512/4898/4898726.png" alt="Mission Icon">
+      </div>
+      <h3><span>OUR</span> MISSION</h3>
+      <p>
+        To provide innovative digital healthcare access through smart kiosks, enhancing preventive care and awareness for all communities.
+      </p>
+    </div>
+
+    <div class="mvv-card vision">
+      <div class="mvv-icon">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsrsS4nS-_9kztq57FMXHjV83iUSpPBj8cAQ&s" alt="Vision Icon">
+      </div>
+      <h3><span>OUR</span> VISION</h3>
+      <p>
+        To build a future where healthcare is a right, not a privilege — accessible instantly and digitally, everywhere.
+      </p>
+    </div>
+
+    <div class="mvv-card values">
+      <div class="mvv-icon">
+        <img src="img/values.png" alt="Values Icon">
+      </div>
+      <h3><span>OUR</span> VALUES</h3>
+      <p>
+        Innovation, inclusivity, and empowerment — driving digital transformation in healthcare with transparency and compassion.
+      </p>
+    </div>
+  </div>
+</section>
+
+    <!-- Our Story / How It Started -->
+    <section class="story-section">
+        <div class="story-img">
+            <img src="{% static 'icons/team.jpg' %}" alt="Our Story Image">
+        </div>
+        <div class="story-text">
+            <h2>Our Story</h2>
+            <p>
+                This platform began as a student-led initiative aimed at solving one major issue — the lack of
+                accessible, low-cost health checkup facilities. Inspired by the struggles faced by people in rural and
+                underserved communities, our team designed a solution that merges healthcare with technology.
+            </p>
+            <p>
+                What started as a college project has grown into a trusted digital health kiosk platform. Now, anyone
+                can monitor their health, consult doctors, and access reports — instantly, affordably, and remotely.
+            </p>
+            <p>
+                This platform began as a student project, inspired by a desire to improve access to basic health care
+                through
+                simple, scalable technology
+            </p>
+        </div>
+    </section>
+
+    <!-- What We Offer Section -->
+    <section class="what-we-offer">
+        <h2>What We Offer</h2>
+        <div class="offer-grid">
+            <div class="offer-card">
+                <i class="fas fa-heartbeat"></i>
+                <h3> 🩺 Basic Health Checkups</h3>
+                <p>Monitor BP, BMI, sugar, oxygen, and temperature instantly using our kiosks.</p>
+            </div>
+            <div class="offer-card">
+                <i class="fas fa-brain"></i>
+                <h3>🧠 Mental Health Support</h3>
+                <p>Access telepsychiatry and mental wellness consultations easily.</p>
+            </div>
+            <div class="offer-card">
+                <i class="fas fa-file-medical"></i>
+                <h3>📄 Health Records</h3>
+                <p>Download, print, or email your scanned reports and health history.</p>
+            </div>
+            <div class="offer-card">
+                <i class="fas fa-user-md"></i>
+                <h3>👨‍⚕️ Consult a Doctor</h3>
+                <p>Talk to qualified doctors via live video and chat from the kiosk itself.</p>
+            </div>
+            <div class="offer-card">
+                <i class="fas fa-qrcode"></i>
+                <h3>📱 QR Based Info Sharing</h3>
+                <p>Share your digital health card or scan others’ cards securely and quickly.</p>
+            </div>
+            <div class="offer-card">
+                <i class="fas fa-notes-medical"></i>
+                <h3>Health Tips & Awareness</h3>
+                <p>Stay updated with seasonal health tips, nutrition advice, and safety guides.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="about-cta">
+        <div class="cta-content">
+            <h2>Want to Learn More?</h2>
+            <p>Get in touch with our team or explore our services to experience the future of accessible healthcare.</p>
+            <a href="contact.html" class="cta-button">Contact Us</a>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>© 2025 Swasthya Kendra. All rights reserved.</p>
+            <p>Need help? Call our helpline: <strong>1800-123-456</strong></p>
+            <p>Designed by Dhruvi Rana</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

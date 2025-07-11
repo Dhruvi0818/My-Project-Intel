@@ -1,0 +1,124 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/checkup.css' %}">
+</head>
+<body>
+ <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">🩺 Swasthya Kendra</div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Services.html">Services</a></li>
+            <li><a href="Records.html">My Records</a></li>
+             <li><a href="about.html">About us </a></li>
+             <li><a href="Contact.html">Contact Us</a></li>
+            <li><a href="help.html">Help</a></li>
+            <li><a href="Login.html">Login</a></li>
+        </ul>
+    </nav>
+
+    <!-- Title + Intro -->
+<section class="checkup-header">
+  <h1>Basic Health Checkup</h1>
+  <p>Please fill in your health details below. Our kiosk will analyze your data to provide a quick health summary.</p>
+</section>
+
+<!-- Health Checkup Services Section -->
+<section class="checkup-services">
+  <h2>Services for Initial Diagnosis & Preventive Care</h2>
+  <div class="service-grid">
+    <div class="service-box">
+      <img src="https://www.shutterstock.com/image-vector/arterial-blood-pressure-checking-concept-600nw-466434533.jpg" alt="Blood Pressure" />
+      <h4>Blood Pressure Monitor</h4>
+    </div>
+    <div class="service-box">
+      <img src="https://media.istockphoto.com/id/1283268581/vector/home-glucose-meter-icon.jpg?s=612x612&w=0&k=20&c=P2vmeAHf_0I4LAmPTNppiwkzGGDAzMkBJxL0wbAIWPk=" alt="Blood Sugar" />
+      <h4>Blood Sugar Test</h4>
+    </div>
+    <div class="service-box">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPdYvjO2w3HWwomBZXnag0Cmd3R3IdYPfjtg&s" alt="BMI" />
+      <h4>BMI & Weight Check</h4>
+    </div>
+    <div class="service-box">
+      <img src="https://png.pngtree.com/png-vector/20220609/ourmid/pngtree-pulse-oximeter-finger-simple-medicine-icon-in-trendy-line-style-isolated-png-image_4832526.png" alt="SpO2" />
+      <h4>Pulse & Oxygen Level</h4>
+    </div>
+    <div class="service-box">
+      <img src="https://static.vecteezy.com/system/resources/previews/001/040/261/non_2x/health-workers-checking-body-temperature-vector.jpg" alt="Temperature" />
+      <h4>Body Temperature Scanner</h4>
+    </div>
+  </div>
+</section>
+
+<!-- Modern Checkup Form -->
+<section class="checkup-form">
+  <h2>Basic Health Checkup</h2>
+  <form action="#">
+    <div class="form-grid">
+      <div class="form-group">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" placeholder="Enter your name" required />
+      </div>
+
+      <div class="form-group">
+        <label for="age">Age</label>
+        <input type="number" id="age" placeholder="Enter your age" required />
+      </div>
+
+      <div class="form-group">
+        <label for="gender">Gender</label>
+        <select id="gender" required>
+          <option value="">Select</option>
+          <option>Male</option>
+          <option>Female</option>
+          <option>Other</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="bp">Blood Pressure (mmHg)</label>
+        <input type="text" id="bp" placeholder="e.g. 120/80" required />
+      </div>
+
+      <div class="form-group">
+        <label for="temp">Body Temperature (°C)</label>
+        <input type="number" step="0.1" id="temp" placeholder="e.g. 98.6" required />
+      </div>
+
+      <div class="form-group">
+        <label for="sugar">Blood Sugar Level (mg/dL)</label>
+        <input type="number" id="sugar" placeholder="e.g. 90" required />
+      </div>
+
+      <div class="form-group">
+        <label for="weight">Weight (kg)</label>
+        <input type="number" step="0.1" id="weight" placeholder="e.g. 60" required />
+      </div>
+
+      <div class="form-group">
+        <label for="height">Height (cm)</label>
+        <input type="number" step="0.1" id="height" placeholder="e.g. 160" required />
+      </div>
+    </div>
+
+    <button type="submit">Submit & Analyze</button>
+  </form>
+</section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>© 2025 Swasthya Kendra. All rights reserved.</p>
+            <p>Need help? Call our helpline: <strong>1800-123-456</strong></p>
+            <p>Designed by Dhruvi Rana</p>
+        </div>
+    </footer>
+
+</body>
+</html>

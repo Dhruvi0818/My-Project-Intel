@@ -1,0 +1,103 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/labtest.css' %}">
+</head>
+
+<body>
+ <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">🩺 Swasthya Kendra</div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Services.html">Services</a></li>
+            <li><a href="Records.html">My Records</a></li>
+             <li><a href="about.html">About us </a></li>
+             <li><a href="Contact.html">Contact Us</a></li>
+            <li><a href="help.html">Help</a></li>
+            <li><a href="Login.html">Login</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+
+        <!-- Page Title & Intro -->
+        <h1>Book a Lab Test</h1>
+        <p>Conveniently book your diagnostic test and get a token instantly.</p>
+
+        <!-- Booking Form -->
+        <form onsubmit="showConfirmation(event)">
+            <h2>Lab Test Booking Form</h2>
+
+            <label for="name">Full Name</label>
+            <input type="text" id="name" required />
+
+            <label for="age">Age</label>
+            <input type="number" id="age" required />
+
+            <label for="gender">Gender</label>
+            <select id="gender" required>
+                <option value="">-- Select Gender --</option>
+                <option>Male</option>
+                <option>Female</option>
+                <option>Other</option>
+            </select>
+
+            <!-- List of Available Tests -->
+            <label for="test">Select a Lab Test</label>
+            <select id="test" required>
+                <option value="">-- Choose Test --</option>
+                <option>Complete Blood Count (CBC)</option>
+                <option>Urine Test</option>
+                <option>Blood Sugar Check</option>
+                <option>Lipid Profile</option>
+                <option>Thyroid Panel</option>
+                <option>Covid-19 RT-PCR</option>
+                <option>Full Body Checkup</option>
+            </select>
+
+            <!-- Choose Preferred Lab -->
+            <label for="lab">Preferred Lab Center</label>
+            <select id="lab">
+                <option>Swasthya Kendra - Sector 10</option>
+                <option>Swasthya Kendra - Main Road</option>
+                <option>Community Health Lab - Zone 2</option>
+            </select>
+
+            <!-- Date & Time -->
+            <label for="date">Preferred Date</label>
+            <input type="date" id="date" required />
+
+            <label for="time">Preferred Time</label>
+            <input type="time" id="time" required />
+
+            <!-- Submit -->
+            <button type="submit">Confirm Booking</button>
+        </form>
+
+        <!-- Confirmation Message + Token -->
+        <div class="confirmation" id="confirmationBox" style="display: none;">
+            ✅ Your lab test booking is confirmed.<br>
+            <strong>Token Number: <span id="tokenNumber">LAB123</span></strong><br>
+            Please arrive 10 minutes before your scheduled time.
+            <br />
+            <button class="print-btn" onclick="window.print()">🖨️ Print Token</button>
+        </div>
+
+    </div>
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>© 2025 Swasthya Kendra. All rights reserved.</p>
+            <p>Need help? Call our helpline: <strong>1800-123-456</strong></p>
+            <p>Designed by Dhruvi Rana</p>
+        </div>
+    </footer>
+</body>
+<script src="labtest.js"></script>
+</html>

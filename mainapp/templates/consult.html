@@ -1,0 +1,107 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/consult.css' %}">
+</head>
+
+<body>
+     <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">🩺 Swasthya Kendra</div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Services.html">Services</a></li>
+            <li><a href="Records.html">My Records</a></li>
+            <li><a href="about.html">About us </a></li>
+             <li><a href="Contact.html">Contact Us</a></li>
+            <li><a href="help.html">Help</a></li>
+            <li><a href="Login.html">Login</a></li>
+        </ul>
+    </nav>
+
+    <!-- Virtual Health Consultation Hero -->
+    <section class="vhc-hero">
+        <div class="vhc-content">
+            <h1>Virtual Health Consultation</h1>
+            <p>Connect with certified doctors from anywhere, anytime.</p>
+            <a href="#consult-form" class="btn">Start Consultation</a>
+        </div>
+    </section>
+
+    <!-- Specialization Selector -->
+    <section class="specialization-section">
+        <h2>Select a Specialization</h2>
+        <select id="specialization-select" onchange="updateDoctorList()">
+            <option value="">-- Choose Specialization --</option>
+            <option value="cardiology">Cardiology</option>
+            <option value="dermatology">Dermatology</option>
+            <option value="psychiatry">Psychiatry</option>
+            <option value="pediatrics">Pediatrics</option>
+            <option value="gynecology">Gynecology</option>
+        </select>
+    </section>
+
+    <!-- Health Concern Form -->
+    <form id="healthForm">
+        <input type="text" name="name" required placeholder="Your Name" />
+        <select name="specialization" required>
+            <option value="Cardiologist">Cardiologist</option>
+            <option value="Dermatologist">Dermatologist</option>
+        </select>
+        <textarea name="symptoms" required placeholder="Describe your concern..."></textarea>
+        <button type="submit">Submit</button>
+    </form>
+
+    <!-- Hidden initially -->
+    <section id="availabilitySection" style="display: none;">
+        <h2>Available Doctors</h2>
+        <div id="availabilityGrid"></div>
+    </section>
+
+
+    <!-- Doctor Availability Info -->
+    <section class="doctor-availability">
+        <h2>Doctor Availability</h2>
+        <div class="availability-grid" id="availabilityGrid">
+            <!-- Slots will be inserted here by JS -->
+        </div>
+    </section>
+
+    <!-- Live Video section -->
+    <section class="video-call-section">
+        <h2>Live Consultation</h2>
+        <div class="video-container">
+            <video id="localVideo" autoplay muted></video>
+            <video id="remoteVideo" autoplay></video>
+        </div>
+        <button id="startCall">Start Call</button>
+    </section>
+
+    <!-- Chat Window -->
+    <section class="chat-section">
+        <h2>Live Chat</h2>
+        <div class="chat-box" id="chatBox">
+            <!-- messages go here -->
+        </div>
+        <form id="chatForm">
+            <input type="text" id="chatInput" placeholder="Type your message..." required />
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>© 2025 Swasthya Kendra. All rights reserved.</p>
+            <p>Need help? Call our helpline: <strong>1800-123-456</strong></p>
+            <p>Designed by Dhruvi Rana</p>
+        </div>
+    </footer>
+</body>
+<script src="consult.js"></script>
+</html>

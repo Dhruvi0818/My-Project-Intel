@@ -1,0 +1,235 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+<link rel="stylesheet" href="{% static 'css/education.css' %}">
+
+</head>
+
+<body>
+
+ <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">🩺 Swasthya Kendra</div>
+        <ul>
+             <li><a href="{% url 'index' %}">Home</a></li>
+            <li><a href="{% url 'Services' %}">Services</a></li>
+            <li><a href="{% url 'Records' %}">My Records</a></li>
+             <li><a href="{% url 'about' %}">About us </a></li>
+             <li><a href="{% url 'Contact' %}">Contact Us</a></li>
+            <li><a href="{% url 'help' %}">Help</a></li>
+            <li><a href="{% url 'login' %}">Login</a></li>
+        </ul>
+    </nav>
+
+  <div class="container">
+
+    <!-- Page Title + Intro -->
+    <h1>Health Awareness & Education</h1>
+    <p class="intro">
+      Stay informed and live a healthier life. Explore verified tips, articles, and videos on physical, mental,
+      and social well-being.
+    </p>
+
+    <!-- Featured Health Articles -->
+    <h2>Featured Health Articles</h2>
+    <div class="articles">
+      <div class="card">
+        <h3>🧼 Importance of Hygiene</h3>
+        <p>Understand how daily hygiene practices can prevent illness and improve overall wellness.</p>
+      </div>
+      <div class="card">
+        <h3>🥗 Eating Right</h3>
+        <p>Learn how to maintain a balanced diet using local and affordable food options.</p>
+      </div>
+      <div class="card">
+        <h3>🧠 Mental Health Matters</h3>
+        <p>Recognize stress, anxiety, and simple steps to care for your mental well-being.</p>
+      </div>
+      <div class="card">
+        <h3>💉 Vaccination Myths</h3>
+        <p>Debunk common misconceptions about vaccines and understand their importance.</p>
+      </div>
+    </div>
+
+    <!-- Health Topics Grid -->
+    <h2>Explore Health Topics</h2>
+    <div class="topics-grid">
+      <div class="topic-card">
+        <span>🥗</span>
+        <h4>Nutrition</h4>
+      </div>
+      <div class="topic-card">
+        <span>🧼</span>
+        <h4>Hygiene</h4>
+      </div>
+      <div class="topic-card">
+        <span>🧠</span>
+        <h4>Mental Health</h4>
+      </div>
+      <div class="topic-card">
+        <span>👩</span>
+        <h4>Women’s Health</h4>
+      </div>
+      <div class="topic-card">
+        <span>👶</span>
+        <h4>Child Care</h4>
+      </div>
+    </div>
+  </div>
+
+  <!-- Women & Childcare Education Section -->
+<section class="women-childcare">
+  <h2>Women & Childcare Education</h2>
+  <div class="education-grid">
+    <div class="edu-card">
+      <h3>Maternal Health</h3>
+      <p>Learn how to care for yourself during pregnancy, manage nutrition, and understand prenatal checkups.</p>
+    </div>
+    <div class="edu-card">
+      <h3>Child Immunization</h3>
+      <p>Know the essential vaccines and schedule for infants and young children to protect against diseases.</p>
+    </div>
+    <div class="edu-card">
+      <h3>Nutrition for Women</h3>
+      <p>Understand dietary needs for women across all ages, including during pregnancy and postnatal recovery.</p>
+    </div>
+    <div class="edu-card">
+      <h3>Newborn Care</h3>
+      <p>Get tips on breastfeeding, hygiene, sleep routines, and common health checks for newborns.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Health Topics Grid -->
+<section class="section health-topics">
+  <h2>Explore Health Topics</h2>
+  <div class="topics-grid">
+    <div class="topic-card">
+      <img src="https://thumbs.dreamstime.com/b/d-red-heart-stethoscope-gauge-symbol-health-blood-pressure-monitoring-vibrant-rendered-blue-symbolizing-cardiology-367220289.jpg" alt="Heart Health">
+      <h4>Heart Health</h4>
+      <p>Tips to manage blood pressure, cholesterol, and stay heart-healthy.</p>
+    </div>
+    <div class="topic-card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrbB-WQPR-gszEzybMhsB7GNBZrJWcMBduFg&s" alt="Diabetes Care">
+      <h4>Diabetes Care</h4>
+      <p>Control sugar levels, diet, exercise, and routine checks.</p>
+    </div>
+    <div class="topic-card">
+      <img src="https://thumbs.dreamstime.com/b/floral-brain-concept-watercolor-good-mental-health-329082577.jpg" alt="Mental Health">
+      <h4>Mental Health</h4>
+      <p>Manage stress, anxiety, and emotional well-being.</p>
+    </div>
+    <div class="topic-card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQekJ3OI00M3MeBqgHIeq0tc6j99KIm7Y7exg&s" alt="Women’s Health">
+      <h4>Women’s Health</h4>
+      <p>Care during pregnancy, periods, and menopause support.</p>
+    </div>
+    <div class="topic-card">
+      <img src="https://st2.depositphotos.com/47577860/45941/v/1600/depositphotos_459414812-stock-illustration-baby-baby-care-care-icon.jpg" alt="Childcare">
+      <h4>Childcare</h4>
+      <p>Growth tips, nutrition, and vaccination tracking for kids.</p>
+    </div>
+    <div class="topic-card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQqR-56ypqem7M4I55FTNrzKLZIzG6rTKCog&s" alt="Respiratory Health">
+      <h4>Respiratory Health</h4>
+      <p>Prevent and manage asthma, allergies, and breathing issues.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Downloadable Brochures Section -->
+<section class="brochure-section">
+  <h2>Downloadable Brochures</h2>
+  <div class="brochure-grid">
+
+    <div class="brochure-card">
+      <h4>Healthy Eating Habits</h4>
+      <p>A guide to daily nutrition and balanced meals.</p>
+      <a href="brochures/healthy-eating.pdf" download>Download PDF</a>
+    </div>
+
+    <div class="brochure-card">
+      <h4>Managing Diabetes</h4>
+      <p>Tips for tracking sugar levels and healthy lifestyle.</p>
+      <a href="brochures/diabetes-guide.pdf" download>Download PDF</a>
+    </div>
+
+    <div class="brochure-card">
+      <h4>Child Vaccination Schedule</h4>
+      <p>Keep track of all important child immunizations.</p>
+      <a href="brochures/vaccination-schedule.pdf" download>Download PDF</a>
+    </div>
+
+    <div class="brochure-card">
+      <h4>Women’s Health Checklist</h4>
+      <p>Preventive checkups and tips for women’s wellbeing.</p>
+      <a href="brochures/womens-health.pdf" download>Download PDF</a>
+    </div>
+
+  </div>
+</section>
+
+  <!-- FAQs Section -->
+<section class="faq-section">
+  <h2>Frequently Asked Questions</h2>
+
+  <div class="faq-item">
+    <button class="faq-question">Do I need an Aadhaar Card to apply?</button>
+    <div class="faq-answer">
+      <p>Yes, Aadhaar card is usually required for identity verification.</p>
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-question">Can I apply online?</button>
+    <div class="faq-answer">
+      <p>Some schemes allow online registration, but kiosk support is also available.</p>
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-question">Where can I check my scheme status?</button>
+    <div class="faq-answer">
+      <p>You can visit your nearest kiosk or use the official website.</p>
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-question">Are these schemes available for everyone?</button>
+    <div class="faq-answer">
+      <p>Most schemes are for low-income or specific groups. Check eligibility before applying.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Newsletter Signup Section -->
+<section class="newsletter-section">
+  <div class="newsletter-container">
+    <h2>Stay Informed with Our Health Newsletter</h2>
+    <p>Subscribe to get regular updates on health tips, wellness advice, and upcoming health events.</p>
+    <form id="newsletterForm">
+      <input type="email" placeholder="Enter your email address" required>
+      <button type="submit">Subscribe</button>
+    </form>
+    <p class="form-message" id="newsletterMessage"></p>
+  </div>
+</section>
+
+  <!-- Footer Section -->
+  <footer class="footer">
+    <div class="footer-content">
+      <p>© 2025 Swasthya Kendra. All rights reserved.</p>
+      <p>Need help? Call our helpline: <strong>1800-123-456</strong></p>
+      <p>Designed by Dhruvi Rana</p>
+    </div>
+  </footer>
+
+</body>
+
+</html>

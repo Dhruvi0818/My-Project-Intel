@@ -1,0 +1,143 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/medicine.css' %}">
+</head>
+
+<body>
+ <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">🩺 Swasthya Kendra</div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Services.html">Services</a></li>
+            <li><a href="Records.html">My Records</a></li>
+             <li><a href="about.html">About us </a></li>
+             <li><a href="Contact.html">Contact Us</a></li>
+            <li><a href="help.html">Help</a></li>
+            <li><a href="Login.html">Login</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+
+        <!-- Page Title + Intro -->
+        <h1>Buy Medicine</h1>
+        <p>Search for medicines or upload your prescription to order from nearby pharmacies or e-pharmacies.</p>
+
+        <!-- Upload Prescription / Enter Medicine -->
+        <section class="upload-section">
+            <h2>Upload Your Prescription</h2>
+            <form id="prescriptionForm" enctype="multipart/form-data">
+                <label for="prescriptionFile">Choose File</label>
+                <input type="file" id="prescriptionFile" name="prescription" accept=".jpg, .png, .pdf" required>
+                <button type="submit">Upload</button>
+                <p id="uploadStatus"></p>
+            </form>
+        </section>
+
+        <!-- Medicine  Search Box -->
+        <section class="search-section">
+            <h2>Search for Medicines</h2>
+            <form id="searchForm">
+                <input type="text" id="searchInput" placeholder="Type medicine name..." required />
+                <button type="submit">Search</button>
+            </form>
+            <div id="searchResults"></div>
+        </section>
+
+        <!-- Buy via E-Pharmacy Button -->
+        <section class="epharmacy-section">
+            <h2>Buy Medicines via E-Pharmacy</h2>
+            <div class="epharmacy-grid">
+
+                <div class="epharmacy-card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCWgxnMmopw1HyP_RuES3feWwydIWd9DeRwA&s" alt="PharmEasy">
+                    <h3>PharmEasy</h3>
+                    <p>Order medicines and get home delivery.</p>
+                    <a href="https://pharmeasy.in/" target="_blank">Visit Store</a>
+                </div>
+
+                <div class="epharmacy-card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoSWXDPG-QENTRGo7LO5Ozl9MD-wHRNBElPg&s" alt="Tata 1mg">
+                    <h3>Tata 1mg</h3>
+                    <p>Wide range of health products & meds.</p>
+                    <a href="https://www.1mg.com/" target="_blank">Visit Store</a>
+                </div>
+
+                <div class="epharmacy-card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-a_TIczsi5hz8cSDyj26iXLBLnX9yYaP9Hw&s" alt="Netmeds">
+                    <h3>Netmeds</h3>
+                    <p>Buy prescription & OTC medicines online.</p>
+                    <a href="https://www.netmeds.com/" target="_blank">Visit Store</a>
+                </div>
+
+                <div class="epharmacy-card">
+                    <img src="https://d1yjjnpx0p53s8.cloudfront.net/styles/logo-thumbnail/s3/112010/medplus.png?itok=DaCoVVsy" alt="MedPlus">
+                    <h3>MedPlus</h3>
+                    <p>Trusted pharmacy with doorstep delivery.</p>
+                    <a href="https://www.medplusmart.com/" target="_blank">Visit Store</a>
+                </div>
+
+                <div class="epharmacy-card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFAXwZfrbhz8ycM4HLKWID-exuhpT048TXlg&s" alt="Apollo Pharmacy">
+                    <h3>Apollo Pharmacy</h3>
+                    <p>24/7 medicines, wellness & health kits.</p>
+                    <a href="https://www.apollopharmacy.in/" target="_blank">Visit Store</a>
+                </div>
+
+                <div class="epharmacy-card">
+                    <img src="https://images.crunchbase.com/image/upload/c_pad,h_256,w_256,f_auto,q_auto:eco,dpr_1/v1477659883/eptposqxabpnxcx7upuo.jpg" alt="Zoylo">
+                    <h3>Zoylo</h3>
+                    <p>Online health platform with quick delivery.</p>
+                    <a href="https://www.zoylo.com/" target="_blank">Visit Store</a>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- View Nearby Pharmacies Button -->
+        <section class="nearby-pharmacy">
+            <h2>Nearby Pharmacy Locator</h2>
+            <div class="pharmacy-grid">
+
+                <div class="pharmacy-card">
+                    <h3>LifeCare Pharmacy</h3>
+                    <p>123 MG Road, Ahmedabad</p>
+                    <p>📍 1.2 km away</p>
+                    <a href="https://maps.google.com?q=23.0225,72.5714" target="_blank">View on Map</a>
+                </div>
+
+                <div class="pharmacy-card">
+                    <h3>GreenMed Store</h3>
+                    <p>Near Civil Hospital, Asarwa</p>
+                    <p>📍 2.4 km away</p>
+                    <a href="https://maps.google.com?q=23.0430,72.6030" target="_blank">View on Map</a>
+                </div>
+
+                <div class="pharmacy-card">
+                    <h3>City Pharmacy</h3>
+                    <p>NR Patel Market, Maninagar</p>
+                    <p>📍 3.1 km away</p>
+                    <a href="https://maps.google.com?q=23.0086,72.5938" target="_blank">View on Map</a>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Footer Section -->
+        <footer class="footer">
+            <div class="footer-content">
+                <p>© 2025 Swasthya Kendra. All rights reserved.</p>
+                <p>Need help? Call our helpline: <strong>1800-123-456</strong></p>
+                <p>Designed by Dhruvi Rana</p>
+            </div>
+        </footer>
+</body>
+<script src="medicine.js"></script>
+</html>

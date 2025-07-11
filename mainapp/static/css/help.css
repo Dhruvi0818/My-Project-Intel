@@ -1,0 +1,152 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: #f2f9ff;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #0077b6;
+    color: #fff;
+}
+
+.navbar .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+}
+
+/* Page Title */
+.page-title {
+    text-align: center;
+    padding: 2rem 1rem 1rem;
+}
+
+.page-title h1 {
+    color: #023e8a;
+    font-size: 2.5rem;
+}
+
+.page-title p {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+/* FAQ Section */
+.faq-section {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 1rem;
+}
+
+.faq-box {
+    background-color: #ffffff;
+    border-left: 5px solid #0077b6;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 6px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.05);
+}
+
+.faq-box h4 {
+    margin-bottom: 0.5rem;
+    color: #0077b6;
+}
+
+.faq-box p {
+    margin: 0;
+    color: #333;
+}
+
+/* Contact Section */
+.contact-support {
+    background: #e1f5ff;
+    padding: 2rem;
+    text-align: center;
+}
+
+.contact-support h2 {
+    color: #023e8a;
+    margin-bottom: 1rem;
+}
+
+.contact-support p {
+    font-size: 1rem;
+    color: #444;
+    margin: 0.3rem 0;
+}
+
+/* Feedback Form */
+.feedback-form {
+    max-width: 600px;
+    margin: 2rem auto;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
+}
+
+.feedback-form h3 {
+    color: #023e8a;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.feedback-form input,
+.feedback-form textarea {
+    width: 100%;
+    padding: 0.7rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+.feedback-form button {
+    width: 100%;
+    padding: 0.8rem;
+    background-color: #0077b6;
+    color: white;
+    font-size: 1rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.feedback-form button:hover {
+    background-color: #023e8a;
+}
+
+/* footer */
+.footer {
+    background-color: #0077b6;
+    color: white;
+    padding: 1.5rem 0;
+    text-align: center;
+    font-size: 1rem;
+    margin-top: 2rem;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.footer-content p {
+    margin: 0.3rem 0;
+    font-weight: 400;
+}
+
+.footer-content strong {
+    color: #ffdd57;
+}

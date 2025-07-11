@@ -1,0 +1,115 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="{% static 'css/Records.css' %}">
+</head>
+
+<body>
+   <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">🩺 Swasthya Kendra</div>
+        <ul>
+            <li><a href="{% url 'home' %}">Home</a></li>
+            <li><a href="{% url 'Services' %}">Services</a></li>
+            <li><a href="{% url 'Records' %}">My Records</a></li>
+             <li><a href="{% url 'about' %}">About us </a></li>
+             <li><a href="{% url 'Contact' %}">Contact Us</a></li>
+            <li><a href="{% url 'help' %}">Help</a></li>
+            <li><a href="{% url 'login' %}">Login</a></li>
+        </ul>
+    </nav>
+
+  <!-- Page Title -->
+  <section class="page-title">
+    <h1>Your Health Records</h1>
+    <p>View and manage your checkup history, prescriptions, and reports.</p>
+  </section>
+<section class="health-records">
+  <h2>My Health Records</h2>
+
+  <!-- User Details -->
+  <div class="user-profile">
+    <h3>👤 Your Details</h3>
+    <p><strong>Name:</strong> Dhruvi Rana</p>
+    <p><strong>Age:</strong> 22</p>
+    <p><strong>Gender:</strong> Female</p>
+    <p><strong>Email:</strong> dhruvi@example.com</p>
+  </div>
+
+  <!-- Upload Reports -->
+  <div class="card upload-card">
+    <h3>📤 Upload Doctor Report</h3>
+    <form id="uploadForm">
+      <input type="file" name="reportFile" required />
+      <button type="submit">Upload</button>
+      <p id="uploadStatus"></p>
+    </form>
+  </div>
+
+  <!-- Download Old Reports -->
+  <div class="card">
+    <h3>📁 Download Old Reports</h3>
+    <ul class="report-list">
+      <li><a href="#">Blood Test Report - Jan 2024</a></li>
+      <li><a href="#">X-Ray Chest - Nov 2023</a></li>
+      <li><a href="#">COVID Certificate</a></li>
+    </ul>
+  </div>
+
+  <!-- Vaccination History -->
+  <div class="card">
+    <h3>💉 Vaccination History</h3>
+    <ul>
+      <li>COVID-19 Dose 1 - 10 Jan 2021</li>
+      <li>COVID-19 Dose 2 - 10 Mar 2021</li>
+      <li>Tetanus Booster - 15 Aug 2022</li>
+    </ul>
+  </div>
+
+  <!-- Book Lab Test Lab Test Booking History -->
+<div class="card">
+  <h3>📜 Lab Test Appointment History</h3>
+  <table class="lab-history-table">
+    <thead>
+      <tr>
+        <th>Test Name</th>
+        <th>Date</th>
+        <th>Time Slot</th>
+        <th>Status</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Blood Sugar Test</td>
+        <td>2025-05-10</td>
+        <td>09:00 AM - 10:00 AM</td>
+        <td><span class="status completed">Completed</span></td>
+      </tr>
+      <tr>
+        <td>Thyroid (TSH)</td>
+        <td>2025-06-03</td>
+        <td>11:00 AM - 12:00 PM</td>
+        <td><span class="status pending">Pending</span></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+  <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>© 2025 Swasthya Kendra. All rights reserved.</p>
+            <p>Need help? Call our helpline: <strong>1800-123-456</strong></p>
+            <p>Designed by Dhruvi Rana</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
