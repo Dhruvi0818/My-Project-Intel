@@ -117,3 +117,11 @@ http://127.0.0.1:8000/
 
 Enjoy using **Swasthya Kendrament** — your one-stop healthcare portal!
 💻🩺💊🌿
+
+---
+
+🙌 Thank You!
+Enjoy using Swasthya Kendrament – built with ❤️ for health and care.
+
+For any queries, reach out to the developer:
+GitHub: [@Dhruvi0818](https://github.com/Dhruvi0818)
