@@ -47,12 +47,24 @@ This all-in-one web portal allows users to consult doctors via live video and ch
 ## 🙋‍♀️ Contact Me
 
 Name: Dhruvi Rana <br>
-GitHub: @Dhruvi0818<br>
+GitHub: [Dhruvi0818-Click Here](https://github.com/Dhruvi0818)<br>
 Email: ranadhruvi689@gmail.com<br>
 
 ---
 
-👍 Like this Project?
-If you liked this project, don’t forget to give it a ⭐ on GitHub and share it with others who might benefit from it.
+## 👍 Like this Project?
+
+If you found this project helpful, please consider giving it a ⭐ on [GitHub](https://github.com/Dhruvi0818/healthproject)  
+and share it with others who might benefit from it.
+
+---
+
+## 🙌 Thank You !!
+
+Enjoy using **Swasthya Kendrament** — built with ❤️ for health and care.<br>
+
+For any queries or suggestions, feel free to reach out to the developer:<br>
+
+**GitHub**: [Dhruvi0818-Click Here](https://github.com/Dhruvi0818)  
 
 
