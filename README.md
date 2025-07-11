@@ -89,24 +89,25 @@ python manage.py migrate
 python manage.py runserver
 Then go to: http://127.0.0.1:8000
 
+```
+
 ---
 
-💡 Future Enhancements
-Real-time doctor availability tracking
+## 💡 Future Enhancements
+- Real-time doctor availability tracking
+- Payment integration for e-pharmacy orders
+- Patient medical history dashboard
+- Admin panel for doctors and pharmacists
 
-Payment integration for e-pharmacy orders
+---
 
-Patient medical history dashboard
+## 🙋‍♀️ Contact Me
 
-Admin panel for doctors and pharmacists
+Name: Dhruvi Rana <br>
+GitHub: @Dhruvi0818<br>
+Email: ranadhruvi689@gmail.com<br>
 
-🙋‍♀️ Contact Me
-
-Name: Dhruvi Rana
-
-GitHub: @Dhruvi0818
-
-Email: (add your email here if you want)
+---
 
 👍 Like this Project?
 If you liked this project, don’t forget to give it a ⭐ on GitHub and share it with others who might benefit from it.
