@@ -1,4 +1,4 @@
-<img width="1894" height="904" alt="image" src="https://github.com/user-attachments/assets/2377d518-3cf5-475e-a947-fbe4e6f1565b" /># Swasthya Kendrament 🏥  
+# Swasthya Kendrament 🏥  
 
 A Smart Healthcare Web Portal built with Django. <br>
 
@@ -7,14 +7,13 @@ This all-in-one web portal allows users to consult doctors via live video and ch
 
 ---
 
-
 ## 📸 Screenshots
 
 ### 🏠 Index Page
-<img width="1894" height="904" alt="Screenshot 2025-07-12 210351" src="https://github.com/user-attachments/assets/341a2ca9-7857-440b-811a-b6723ce1a4d9" />
+<img width="1882" height="689" alt="Screenshot 2025-07-12 210351" src="https://github.com/user-attachments/assets/341a2ca9-7857-440b-811a-b6723ce1a4d9" />
 
 ### 🩺 Our Services Section
-<img width="1894" height="903" alt="image" src="https://github.com/user-attachments/assets/8bc0db26-a750-4db8-8d26-1aea2ae47488" />
+<img width="1882" height="689" alt="image" src="https://github.com/user-attachments/assets/8bc0db26-a750-4db8-8d26-1aea2ae47488" />
 
 ### 🛡️ Why Choose Our Kiosk?
 <img width="1882" height="689" alt="image" src="https://github.com/user-attachments/assets/1b247c35-7779-4ee7-8e07-0b3b7a19c062" />
